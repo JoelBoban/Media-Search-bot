@@ -274,7 +274,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('Mʏ Dᴇᴠ👨‍💻', url='https://t.me/stephennedumpally'),
                     InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url='https://t.me/AdhavaaBiriyaniKittiyalo')
-                ]
+                ],
                 [
                     InlineKeyboardButton('Hᴇʟᴘ⚙️', callback_data="help"),
                     InlineKeyboardButton('Hᴏᴍᴇ🏠', callback_data="start")
