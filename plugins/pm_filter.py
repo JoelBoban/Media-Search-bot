@@ -274,8 +274,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('Mʏ Dᴇᴠ👨‍💻', url='https://t.me/stephennedumpally'),
                     InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url='https://t.me/AdhavaaBiriyaniKittiyalo')
-                    InlineKeyboardButton('Hᴇʟᴘ⚙️', callback_data="help"
-                    InlineKeyboardButton('Hᴏᴍᴇ🏠', callback_dats="start"
+                    InlineKeyboardButton('Hᴇʟᴘ⚙️', callback_data="help"),
+                    InlineKeyboardButton('Hᴏᴍᴇ🏠', callback_dats="start"),
                 ]
                 ]
             await query.message.edit(text="<b>○ Mʏ ɴᴀᴍᴇ : Tᴏᴠɪɴᴏ Tʜᴏᴍᴀs/n○ Cʀᴇᴀᴛᴏʀ : <a href='https://t.me/stephennedumpally'>JOEL</a>\n○ Cʀᴇᴅɪᴛs: @subinps @MuFaZTG @J_I_S_I_N @Thehellruler @DarkzzAngel\n○ Lᴀɴɢᴜᴀɢᴇ : <code>Pʜʏᴛʜᴏɴ3</code>\n○ Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ Aᴄʏɴᴄɪᴏ</a>\n○ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href='https://t.me/AdhavaaBiriyaniKittiyalo'>Cʟɪᴄᴋ ʜᴇʀᴇ</a>\n○ Sᴇʀᴠᴇʀ : <a href='https://herokuapp.com/'>Hᴇʀᴏᴋᴜ</a>\n○ Dᴀᴛᴀʙᴀsᴇ : <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=Tr
