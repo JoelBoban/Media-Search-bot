@@ -105,7 +105,11 @@ async def start(bot, cmd):
                         InlineKeyboardButton("Our Group 👥", url="https://t.me/askmecinema")
                     ],
                     [
-                        InlineKeyboardButton("About 😎", callback_data="about")
+                        InlineKeyboardButton("About 😎", callback_data="about"),
+                        InlineKeyboardButton("Help ⚙️", callback_data="help")
+                    ],
+                    [
+                        InlineKeyboardButton("➕ Add me to you group", url="http://t.me/botusername?startgroup=start")
                     ]
                 ]
             )
