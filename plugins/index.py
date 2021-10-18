@@ -14,10 +14,10 @@ lock = asyncio.Lock()
 async def index_files(bot, message):
     """Save channel or group files"""
     if lock.locked():
-        await message.reply('Wait until previous process complete.')
+        await message.reply('Wᴀɪᴛ ᴜɴᴛɪʟ ᴘʀᴇᴠɪᴏᴜs ᴘʀᴏᴄᴇss ᴄᴏᴍᴘʟᴇᴛᴇ.')
     else:
         while True:
-            last_msg = await bot.ask(text = "Forward me last message of a channel which I should save to my database.\n\nYou can forward posts from any public channel, but for private channels bot should be an admin in the channel.\n\nMake sure to forward with quotes (Not as a copy)", chat_id = message.from_user.id)
+            last_msg = await bot.ask(text = "Fᴏʀᴡᴀʀᴅ ᴍᴇ ᴛʜᴇ ʟᴀsᴛ ᴍsɢ ᴏғ ᴀ ᴄʜᴀɴɴᴇʟ ᴡʜɪᴄʜ ɪ sʜᴏᴜʟᴅ sᴀᴠᴇ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ.\n\nYᴏᴜ ᴄᴀɴ ғᴏʀᴡᴀʀᴅ ᴘᴏsᴛ ғʀᴏᴍ ᴀɴʏ ᴘᴜʙʟɪᴄ ᴄʜᴀɴɴᴇʟ, ʙᴜᴛ ғᴏʀ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ ʙᴏᴛ sʜᴏᴜʟᴅ ʙᴇ ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ.\n\nMᴀᴋᴇ sᴜʀᴇ ᴛᴏ ғᴏʀᴡᴀʀᴅ ᴡɪᴛʜ ǫᴜᴏᴛᴇs (Nᴏᴛ ᴀs ᴄᴏᴘʏ)", chat_id = message.from_user.id)
             try:
                 last_msg_id = last_msg.forward_from_message_id
                 if last_msg.forward_from_chat.username:
@@ -27,10 +27,10 @@ async def index_files(bot, message):
                 await bot.get_messages(chat_id, last_msg_id)
                 break
             except Exception as e:
-                await last_msg.reply_text(f"This Is An Invalid Message, Either the channel is private and bot is not an admin in the forwarded chat, or you forwarded message as copy.\nError caused Due to <code>{e}</code>")
+                await last_msg.reply_text(f"Tʜɪs ɪs ᴀɴ ɪɴᴠᴀʟɪᴅ ᴍsɢ, Eɪᴛʜᴇʀ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ɪs ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ʙᴏᴛ ɪs ɴᴏᴛ ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ғᴏʀᴡᴀʀᴅᴇᴅ ᴄʜᴀᴛ, ᴏʀ ʏᴏᴜ ғᴏʀᴡᴀʀᴅᴇᴅ ᴍsɢ ᴀs ᴄᴏᴘʏ.\nEʀʀᴏʀ ᴄᴀᴜsᴇᴅ ᴅᴜᴇ ᴛᴏ <code>{e}</code>")
                 continue
 
-        msg = await message.reply('Processing...⏳')
+        msg = await message.reply('Pʀᴏᴄᴇssɪɴɢ...⏳')
         total_files = 0
         async with lock:
             try:
@@ -67,7 +67,7 @@ async def index_files(bot, message):
                     current+=1
                     nyav+=1
                     if nyav == 20:
-                        await msg.edit(f"Total messages fetched: {current}\nTotal messages saved: {total_files}")
+                        await msg.edit(f"Tᴏᴛᴀʟ Mᴇssᴀɢᴇs Fᴇᴛᴄʜᴇᴅ: {current}\nTᴏᴛᴀʟ Fɪʟᴇs Sᴀᴠᴇᴅ: {total_files}")
                         nyav -= 20
                     if current == total:
                         break
@@ -77,4 +77,4 @@ async def index_files(bot, message):
                 logger.exception(e)
                 await msg.edit(f'Error: {e}')
             else:
-                await msg.edit(f'Total {total_files} Saved To DataBase!')
+                await msg.edit(f'Tᴏᴛᴀʟ {total_files} Sᴀᴠᴇᴅ Tᴏ Dᴀᴛᴀʙᴀsᴇ!')
