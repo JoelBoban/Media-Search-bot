@@ -29,7 +29,7 @@ Its Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provid
 
 ⚠️More Help Check Help Button Below**
 
-©️MᴀɪɴᴛᴀɪɴᴇD Bʏ  <a href='https://t.me/stephennedumpally'>JOEL #DC 1</a>
+©️MᴀɪɴᴛᴀɪɴᴇD Bʏ  <a href='https://t.me/stephennedumpally'>JOEL DC 1</a>
 
 SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
 INVITE_MSG = 'Please join @.... to use this bot'
