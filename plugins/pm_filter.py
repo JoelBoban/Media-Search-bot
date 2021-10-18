@@ -147,7 +147,7 @@ async def group(client, message):
             if poster:
                 await message.reply_photo(photo=poster, caption=f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
-                await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>Hᴇʀᴇ ɪs ᴡʜᴀᴛ ɪ ғᴏᴜɴᴅ ғᴏʀ ʏᴏᴜʀ ǫᴜᴇʀʏ Qᴜᴇʀʏ: {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -272,12 +272,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
-                    InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
+                    InlineKeyboardButton('Mʏ Dᴇᴠ👨‍💻', url='https://t.me/stephennedumpally'),
+                    InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url='https://t.me/AdhavaaBiriyaniKittiyalo')
+                    InlineKeyboardButton('Hᴇʟᴘ⚙️', callback_data=help
+                    InlineKeyboardButton('Hᴏᴍᴇ🏠', callback_dats=start
                 ]
                 ]
-            await query.message.edit(text="<b>Developer : <a href='https://t.me/subinps_bot'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
-
+            await query.message.edit(text="<b>○ Mʏ ɴᴀᴍᴇ : Tᴏᴠɪɴᴏ Tʜᴏᴍᴀs/n○ Cʀᴇᴀᴛᴏʀ : <a href='https://t.me/stephennedumpally'>JOEL</a>\n○ Cʀᴇᴅɪᴛs: @subinps @MuFaZTG @J_I_S_I_N @Thehellruler @DarkzzAngel\n○ Lᴀɴɢᴜᴀɢᴇ : <code>Pʜʏᴛʜᴏɴ3</code>\n○ Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ Aᴄʏɴᴄɪᴏ</a>\n○ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href='https://t.me/AdhavaaBiriyaniKittiyalo'>Cʟɪᴄᴋ ʜᴇʀᴇ</a>\n○ Sᴇʀᴠᴇʀ : <a href='https://herokuapp.com/'>Hᴇʀᴏᴋᴜ</a>\n○ Dᴀᴛᴀʙᴀsᴇ : <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=Tr
 
 
         elif query.data.startswith("subinps"):
@@ -297,8 +298,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/subin_works')
+                        InlineKeyboardButton('Mʏ Dᴇᴠ👨‍💻', url='https://t.me/stephennedumpally'),
+                        InlineKeyboardButton('Oᴜʀ Gʀᴏᴜᴘ👥', url='https://t.me/askmecinema')
                     ]
                     ]
                 
@@ -329,8 +330,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/subin_works')
+                        InlineKeyboardButton('Mʏ Dᴇᴠ👨‍💻', url='https://t.me/stephennedumpally'),
+                        InlineKeyboardButton('Mʏ Gʀᴏᴜᴘ👥', url='https://t.me/askmecinema')
                     ]
                     ]
                 
