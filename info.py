@@ -35,7 +35,7 @@ Its Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provid
 
 ⚠️More Help Check Help Button Below**
 
-©️MᴀɪɴᴛᴀɪɴᴇD Bʏ  <a href=https://t.me/stephennedumpally</a>
+©️MᴀɪɴᴛᴀɪɴᴇD Bʏ  <a href='https://t.me/stephennedumpally'>JOEL #DC 1</a>
 """
 START_MSG = environ.get('START_MSG', default_start_msg)
 
