@@ -23,7 +23,7 @@ async def start(bot, cmd):
                         parse_mode="markdown",
                         
                     )
-                    return
+                    return it
             except UserNotParticipant:
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
@@ -198,4 +198,4 @@ async def bot_info(bot, message):
             InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url='https://t.me/AdhavaaBiriyaniKittiyalo')
         ]
         ]
-    await message.reply(text="<b>○ Mʏ ɴᴀᴍᴇ : Tᴏᴠɪɴᴏ Tʜᴏᴍᴀs/n○ Cʀᴇᴀᴛᴏʀ : <a href='https://t.me/stephennedumpally'>JOEL</a>\n○ Cʀᴇᴅɪᴛs: @subinps @MuFaZTG @J_I_S_I_N @Thehellruler @DarkzzAngel\n○ Lᴀɴɢᴜᴀɢᴇ : <code>Pʜʏᴛʜᴏɴ3</code>\n○ Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ Aᴄʏɴᴄɪᴏ</a>\n○ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href='https://t.me/AdhavaaBiriyaniKittiyalo'>Cʟɪᴄᴋ ʜᴇʀᴇ</a>\n○ Sᴇʀᴠᴇʀ : <a href='https://herokuapp.com/'>Hᴇʀᴏᴋᴜ</a>\n○ Dᴀᴛᴀʙᴀsᴇ : <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>○ Mʏ ɴᴀᴍᴇ : Tᴏᴠɪɴᴏ Tʜᴏᴍᴀs\n○ Cʀᴇᴀᴛᴏʀ : <a href='https://t.me/stephennedumpally'>JOEL</a>\n○ Cʀᴇᴅɪᴛs: @subinps @MuFaZTG @J_I_S_I_N @Thehellruler @DarkzzAngel\n○ Lᴀɴɢᴜᴀɢᴇ : <code>Pʜʏᴛʜᴏɴ3</code>\n○ Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ Aᴄʏɴᴄɪᴏ</a>\n○ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href='https://t.me/AdhavaaBiriyaniKittiyalo'>Cʟɪᴄᴋ ʜᴇʀᴇ</a>\n○ Sᴇʀᴠᴇʀ : <a href='https://herokuapp.com/'>Hᴇʀᴏᴋᴜ</a>\n○ Dᴀᴛᴀʙᴀsᴇ : <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
