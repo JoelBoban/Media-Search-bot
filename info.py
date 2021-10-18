@@ -29,13 +29,13 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
 default_start_msg = """
-**𝐘𝐨..𝐘𝐨..Good evening 𝐉𝐨𝐞𝐥 #𝐃𝐂 1 🙋, I'm Powerful Auto-Filter Bot You Can Use Me As A Auto-filter Bot In Your Group ..
+**𝐘𝐨..𝐘𝐨..Good evening 🙋, I'm Powerful Auto-Filter Bot You Can Use Me As A Auto-filter Bot In Your Group ..
 
 Its Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provide Movies There...🤓
 
 ⚠️More Help Check Help Button Below**
 
-©️MᴀɪɴᴛᴀɪɴᴇD Bʏ  
+©️MᴀɪɴᴛᴀɪɴᴇD Bʏ  <a href=https://t.me/stephennedumpally</a>
 """
 START_MSG = environ.get('START_MSG', default_start_msg)
 
