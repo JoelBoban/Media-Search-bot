@@ -92,18 +92,19 @@ async def start(bot, cmd):
             )
         )
     else:
-        await cmd.reply_text(
+        await cmd.reply_photo(
             START_MSG,
+            photo=(random.choice())
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Other Bots", url="https://t.me/subin_works/122")
+                        InlineKeyboardButton("Search Here 🔎", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("Our Group 👥", url="https://t.me/askmecinema")
                     ],
                     [
-                        InlineKeyboardButton("About", callback_data="about")
+                        InlineKeyboardButton("About 😎", callback_data="about")
                     ]
                 ]
             )
