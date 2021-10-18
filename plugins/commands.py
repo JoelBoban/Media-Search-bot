@@ -93,7 +93,7 @@ async def start(bot, cmd):
         )
     else:
         await cmd.reply_photo(
-            photo=(random.choice())
+            photo=(random.choice("https://telegra.ph/file/6702ca45f631f6b229d41.jpg","https://telegra.ph/file/89e4e72112da922830ffc.jpg","https://telegra.ph/file/e7f1f33959540648ab417.jpg","https://telegra.ph/file/b3aa3c0b2a316a64885b4.jpg","https://telegra.ph/file/5002074da841f94952571.jpg"))
             caption=START_MSG,
             parse_mode="Markdown",
             disable_web_page_preview=True,
