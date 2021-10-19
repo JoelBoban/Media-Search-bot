@@ -109,7 +109,7 @@ async def start(bot, cmd):
                         InlineKeyboardButton("Help ⚙️", callback_data="help")
                     ],
                     [
-                        InlineKeyboardButton("➕ Add me to you group", url="http://t.me/botusername?startgroup=start")
+                        InlineKeyboardButton("➕ Add me to you group", url="https://t.me/TT_MovieBot?startgroup=true")
                     ]
                 ]
             )
